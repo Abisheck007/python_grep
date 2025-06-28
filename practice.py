@@ -27,7 +27,18 @@ import sys
 
 # print(list1)
 
-list = ["Abisheck","Mahalaskhsmi","Ramani","Balasubramaniyam","subhaharini"]
+# list = ["Abisheck","Mahalaskhsmi","Ramani","Balasubramaniyam","subhaharini"]
 
-for i in range(len(list)):
-    print(list[i])
+# for i in range(len(list)):
+#     print(list[i])
+
+
+dataset = ["Aanandh","abisheck","Arjun","deepak","devi","maha","aalbin","binlaidin"]
+newdataset = []
+
+for x in dataset:
+    if 'a' in x:
+        newdataset.append(x)
+
+newdataset.sort()
+print(newdataset)
