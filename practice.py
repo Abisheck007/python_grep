@@ -19,8 +19,15 @@ import sys
 # print(list)
 
 #to append to two list
-list1 = ["Abi","Dhiraj","Amma"]
-list2 = ["bala","maha","lakshmi"]
-list1.extend(list2)
-list1.remove("Dhiraj")
-print(list1)
+# list1 = ["Abi","Dhiraj","Amma"]
+# list2 = ["bala","maha","lakshmi"]
+# list2.pop(1)
+# list1.extend(list2)
+# list1.remove("Dhiraj")
+
+# print(list1)
+
+list = ["Abisheck","Mahalaskhsmi","Ramani","Balasubramaniyam","subhaharini"]
+
+for i in range(len(list)):
+    print(list[i])
