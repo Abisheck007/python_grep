@@ -1,7 +1,7 @@
 import random
 import sys
 
-# a = "     Abisheck Maha    "
+# a = "     Abisheck    "
 # print(a.upper())
 # print(a.strip())
 # print(a.replace("k", "K"))
@@ -14,31 +14,35 @@ import sys
 
 # list = ["abi","anandh"]
 
-# list.insert(2,"Abimaha")
+# list.insert(2,"Abi")
 # list.append("ramani")
 # print(list)
 
 #to append to two list
 # list1 = ["Abi","Dhiraj","Amma"]
-# list2 = ["bala","maha","lakshmi"]
-# list2.pop(1)
+# list2 = ["lakshmi"]
+
 # list1.extend(list2)
 # list1.remove("Dhiraj")
 
 # print(list1)
 
-# list = ["Abisheck","Mahalaskhsmi","Ramani","Balasubramaniyam","subhaharini"]
+# list = ["Abisheck","Ramani","Balasubramaniyam","subhaharini"]
 
 # for i in range(len(list)):
 #     print(list[i])
 
-
-dataset = ["Aanandh","abisheck","Arjun","deepak","devi","maha","aalbin","binlaidin"]
+# fetching specific data from one list and putting in another list
+dataset = ["Aanandh","abisheck","Arjun","deepak","devi","maharani","aalbin","binlaidin"]
 newdataset = []
 
 for x in dataset:
     if 'a' in x:
         newdataset.append(x)
 
-newdataset.sort()
-print(newdataset)
+newdataset.sort(reverse=True)
+
+
+blt1 = ["Abisheck","achu", "messi","veni","renuga","ravi"]
+copylist = blt1[:]
+print(copylist)
