@@ -45,12 +45,11 @@ newdataset.sort(reverse=True)
 
 blt1 = ["Abisheck","achu", "messi","veni","renuga","ravi"]
 copylist = blt1[:]
-print(copylist)
 
 
-a = 11
 
-if a > 10:
-    print("ur grown")
-else:
-    print("your child")
+x = ("Abi","Anandh","Dhiraj","Amma")
+y = list(x)
+y[1] = "Aadhi"
+x = tuple(y)
+print(x)
