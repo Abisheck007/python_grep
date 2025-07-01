@@ -1,3 +1,3 @@
-import mymodule
+from mymodule import person1
 
-mymodule.greetings("Abisheck")
+print (person1["age"])

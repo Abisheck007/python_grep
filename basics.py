@@ -1,6 +1,7 @@
 import random
 import sys
-
+import platform
+import json
 # a = "     Abisheck    "
 # # print(a.upper())
 # # print(a.strip())
@@ -136,7 +137,19 @@ data = {
 
 #Functions in python
 
-def greetings(fname):
-    print("Hello, welcome to the Python basics tutorial! invited by", fname)
+# def greetings(fname):
+#     print("Hello, welcome to the Python basics tutorial! invited by", fname)
 
-greetings("Abisheck")
+# greetings("Abisheck")
+
+# x = platform.system()
+# print(x)
+
+x =  {
+    "name": "Abi",
+    "age": 21,
+    "hobby": "coding"
+}
+
+y = json.dumps(x)
+print(y)

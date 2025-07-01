@@ -1,2 +1,8 @@
-def greetings(name):
-    print("Hi, this is " + name + "! Welcome to Python programming.")
+def greeting(name):
+  print("Hello, " + name)
+
+person1 = {
+  "name": "John",
+  "age": 36,
+  "country": "Norway"
+}
