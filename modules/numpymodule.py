@@ -1,5 +1,5 @@
 import numpy as np
-
+import random
 a = np.array([1, 2, 3], dtype='int16')
 b = np.array([4, 5, 6])
 c  = a* b
@@ -41,4 +41,65 @@ arr1[0,2] = 300
 
 # print(np.full((2,2),2))
 
-print(np.full_like(arr1,2))
+# print(np.full_like(arr1,2))
+
+#we can all pass random number inside our array
+
+# print(np.random.randint(0, 10, size=(2, 3)))
+
+#identity matrix
+
+# print(np.identity(4, dtype='int16'))
+
+# we can repear or array
+
+# l1 = np.array([1, 2, 3])
+# l2 = np.repeat(l1,3)
+# print(l2)
+
+#task1
+
+# a = np.ones((7,7))
+# a[1:6,1:6] = 0
+# a[2:5,2:5] = 1
+# a[3,3] = 9
+# print(a)
+
+#task2
+
+# b = np.ones((9, 9))
+# b[1:8, 1:8] = 0
+# b[2:7, 2:7] = 1
+# b[3:6, 4] = 0   
+# b[4, 3:6] = 0 
+# b[4, 4] = 9
+# print(b)
+
+
+#Linear algebra using  numpy
+# a= np.full((2,3),1)
+# b = np.full((3,2),2)
+# print(np.matmul(a, b))
+
+#statics using numpy
+
+# stats = np.array([[1, 2, 3], [4, 5, 6]])
+# print(np.max(stats, axis=1))
+# print(np.sum(stats))
+
+#rearranging array in numpy
+
+# before = np.array([[1,2,3,4],[5,6,7,8]])
+# after = before.reshape((2,2,2))  
+# print(after)
+
+#stacking vectors in numpy
+
+# v1 = np.array([1, 2, 3])
+# v2 = np.array([4, 5, 6])
+# print(np.vstack((v1, v2, v1, v2)))  # vertical stacking if we use hstack then it will stack horizontally
+# print(np.hstack((v1, v2, v1, v2)))  # horizontal stacking
+
+#Load data from file
+
+print(np.genfromtxt('/home/abisheck/python/python_grep/modules/data.txt', delimiter=','))
