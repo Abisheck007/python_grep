@@ -102,4 +102,11 @@ arr1[0,2] = 300
 
 #Load data from file
 
-print(np.genfromtxt('/home/abisheck/python/python_grep/modules/data.txt', delimiter=','))
+# filedata = np.genfromtxt('/home/abisheck/python/python_grep/modules/data.txt', delimiter=',')
+# print(filedata > 5)
+# print(filedata[filedata > 5])  # this will print all the values which are greater than 5 
+
+#Advance Indexing
+
+a = np.array([1,2,3,4,5,6,7,8,9])
+print(a[[1,2,8]])
